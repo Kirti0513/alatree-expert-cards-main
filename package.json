@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-   "homepage": "https://kirti0513.github.io/alatree-expert-cards-main/"
+   "homepage": "Kirti0513/alatree-expert-cards-main"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
