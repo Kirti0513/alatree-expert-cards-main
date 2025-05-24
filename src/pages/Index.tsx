@@ -10,7 +10,7 @@ const experts = [
     name: "Sarah Chen",
     skill: "Digital Marketing",
     category: "marketing",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/sarah.png",  
     rating: 4.9,
     price: 75,
     sessions: 127
@@ -20,7 +20,7 @@ const experts = [
     name: "Michael Rodriguez",
     skill: "Web Development",
     category: "technology",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/michael.png",
     rating: 4.8,
     price: 90,
     sessions: 89
@@ -30,7 +30,7 @@ const experts = [
     name: "Emily Johnson",
     skill: "UX/UI Design",
     category: "design",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/emily.png",
     rating: 4.9,
     price: 85,
     sessions: 156
@@ -40,7 +40,7 @@ const experts = [
     name: "David Kim",
     skill: "Business Strategy",
     category: "business",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/david.png",
     rating: 4.7,
     price: 120,
     sessions: 203
@@ -50,7 +50,7 @@ const experts = [
     name: "Lisa Wang",
     skill: "Data Science",
     category: "technology",
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/lisa.png",
     rating: 4.8,
     price: 95,
     sessions: 134
@@ -60,7 +60,7 @@ const experts = [
     name: "James Thompson",
     skill: "Content Marketing",
     category: "marketing",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/james.png",
     rating: 4.6,
     price: 65,
     sessions: 98
@@ -70,7 +70,7 @@ const experts = [
     name: "Alexandra Foster",
     skill: "Graphic Design",
     category: "design",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/alexandra.png",
     rating: 4.9,
     price: 70,
     sessions: 145
@@ -80,7 +80,7 @@ const experts = [
     name: "Robert Martinez",
     skill: "Financial Planning",
     category: "business",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
+    image: "/images/experts/robert.png",
     rating: 4.8,
     price: 110,
     sessions: 167
