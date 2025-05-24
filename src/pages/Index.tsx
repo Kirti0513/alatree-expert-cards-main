@@ -1,16 +1,25 @@
-
 import { useState } from "react";
 import { ExpertCard } from "@/components/ExpertCard";
 import { CategoryFilter } from "@/components/CategoryFilter";
 
-// Mock data for experts
+// Import expert images from assets
+import sarahImg from "@/assets/images/experts/sarah.png";
+import michaelImg from "@/assets/images/experts/michael.png";
+import emilyImg from "@/assets/images/experts/emily.png";
+import davidImg from "@/assets/images/experts/david.png";
+import lisaImg from "@/assets/images/experts/lisa.png";
+import jamesImg from "@/assets/images/experts/james.png";
+import alexandraImg from "@/assets/images/experts/alexandra.png";
+import robertImg from "@/assets/images/experts/robert.png";
+
+// Expert data with imported images
 const experts = [
   {
     id: 1,
     name: "Sarah Chen",
     skill: "Digital Marketing",
     category: "marketing",
-    image: "/images/experts/sarah.png",  
+    image: sarahImg,
     rating: 4.9,
     price: 75,
     sessions: 127
@@ -20,7 +29,7 @@ const experts = [
     name: "Michael Rodriguez",
     skill: "Web Development",
     category: "technology",
-    image: "/images/experts/michael.png",
+    image: michaelImg,
     rating: 4.8,
     price: 90,
     sessions: 89
@@ -30,7 +39,7 @@ const experts = [
     name: "Emily Johnson",
     skill: "UX/UI Design",
     category: "design",
-    image: "/images/experts/emily.png",
+    image: emilyImg,
     rating: 4.9,
     price: 85,
     sessions: 156
@@ -40,7 +49,7 @@ const experts = [
     name: "David Kim",
     skill: "Business Strategy",
     category: "business",
-    image: "/images/experts/david.png",
+    image: davidImg,
     rating: 4.7,
     price: 120,
     sessions: 203
@@ -50,7 +59,7 @@ const experts = [
     name: "Lisa Wang",
     skill: "Data Science",
     category: "technology",
-    image: "/images/experts/lisa.png",
+    image: lisaImg,
     rating: 4.8,
     price: 95,
     sessions: 134
@@ -60,7 +69,7 @@ const experts = [
     name: "James Thompson",
     skill: "Content Marketing",
     category: "marketing",
-    image: "/images/experts/james.png",
+    image: jamesImg,
     rating: 4.6,
     price: 65,
     sessions: 98
@@ -70,7 +79,7 @@ const experts = [
     name: "Alexandra Foster",
     skill: "Graphic Design",
     category: "design",
-    image: "/images/experts/alexandra.png",
+    image: alexandraImg,
     rating: 4.9,
     price: 70,
     sessions: 145
@@ -80,7 +89,7 @@ const experts = [
     name: "Robert Martinez",
     skill: "Financial Planning",
     category: "business",
-    image: "/images/experts/robert.png",
+    image: robertImg,
     rating: 4.8,
     price: 110,
     sessions: 167
@@ -98,8 +107,8 @@ const categories = [
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredExperts = activeCategory === "all" 
-    ? experts 
+  const filteredExperts = activeCategory === "all"
+    ? experts
     : experts.filter(expert => expert.category === activeCategory);
 
   return (
@@ -122,7 +131,7 @@ const Index = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Category Filter */}
         <div className="mb-8">
-          <CategoryFilter 
+          <CategoryFilter
             categories={categories}
             activeCategory={activeCategory}
             onCategoryChange={setActiveCategory}
